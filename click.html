@@ -24,7 +24,7 @@
                             <label class="label">Loja *:</label>
                             <div class="control">
                                 <div class="select is-fullwidth">
-                                    <select name="Selecione a Opção"> 
+                                    <select name="SelecioneAopção"> 
                                     <option>MERCADO LIVRE</option>
                                     <option>SHOPEE</option>
                                 </select>
@@ -47,7 +47,7 @@
                             <label class="label">Escolha sua arte * :</label>
                             <div class="control">
                                 <div class="select is-fullwidth">
-                                    <select name="Selecione a Opção">
+                                    <select name="SelecioneAopçãoArte">
                                         <option>Vou escolher uma opção no catálogo</option>
                                         <option>Quero o modelo do anúncio</option>
                                         <option>Não desejo personalizar meu pedido ( NÃO QUERO ADESIVOS )</option>
@@ -58,16 +58,20 @@
                             </div>
                         </div>
                         <h2>Opções Catalogo</h2>
-                        <input type="file" name="image" /></br>
-                        <input type="submit" value="Enviar" name="envia" />
+                        <input type="file" name="imagem" /></br>
+                        <input type="submit" value="Enviar" name="Enviar" />
                     </div>
             </div>
             <div>
-                <label for="msg">Mensagem:</label>
-                <textarea id="msg" name="usuario_msg"></textarea>
+                <label for="Frase">Frase:</label>
+                <div class="control">
+                    <textarea id="Frase" class="textarea" placeholder="Digite sua frase" maxlength="2000"></textarea>
+                </div>
             </div>
-            <div class="button">
-                <button type="submit">Enviar sua mensagem</button>
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link is-medium">Enviar</button>
+                </div>
             </div>
             </form>
         </div>
