@@ -33,6 +33,12 @@ textarea {
     border: 1px solid #999;
 }
 
+h2 {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 input:focus,
 textarea:focus {
     border-color: #000;

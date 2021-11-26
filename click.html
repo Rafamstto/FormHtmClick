@@ -1,37 +1,76 @@
 <head>
-    <h1>Formulário Click</h1>
-    <link rel="stylesheet" href="click.css" />
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/bulma.min.css" />
+
 </head>
-<form action="/https://docs.google.com/spreadsheets/d/e/2PACX-1vSdr_JOgW-seCH8DvCJ3_5U2aHQI8gQq7ZK6lDmD3Ldki00qp8XBcqL2Y2xB64j6sBUotpnw6Pm0lgA/pubhtml" method="post">
-    <div>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="usuario_name" />
-    </div>
-    <div>
-        <label for="numero pedido">Numero de Pedido:</label>
-        <input type="text" id="numero pedido" name="usuario_numero pedido" />
-    </div>
-    <div>
-        <label for="telefone">Telefone:</label>
-        <input type="telefone" id="telefone" name="usuario_telefone" />
-    </div>
-    <div>
-        <h2>Escolha sua arte</h2>
-        <select name="Opções">
-            <option value="Sim (link de contato do whats para envio da arte https://tinyurl.com/envioarte)">Sim (link de contato do whats para envio da arte https://tinyurl.com/envioarte)</option>
-            <option value="Vou escolher uma opção no catálogo">Vou escolher uma opção no catálogo</option>
-            <option value="Quero o modelo do anúncio">Quero o modelo do anúncio</option>
-            <option value="Não desejo personalizar meu pedido ( NÃO QUERO ADESIVOS )">Não desejo personalizar meu pedido ( NÃO QUERO ADESIVOS )</option>
-            <option value="Enviar folhas em branco ( SEM IMPRESSÃO )">Enviar folhas em branco ( SEM IMPRESSÃO )</option>    
 
-
-        </select>
-    </div>
-    <div>
-        <label for="msg">Mensagem:</label>
-        <textarea id="msg" name="usuario_msg"></textarea>
-    </div>
-    <div class="button">
-        <button type="submit">Enviar sua mensagem</button>
-    </div>
-</form>
+<body>
+    <section class="selection">
+        <div class="container">
+            <div class="columms is-centered">
+                <div class="columms is-half">
+                    <h1 class="title has-text-centered">Formulário Click</h1>
+                </div>
+                <form action="enviar.php" method="post">
+                    <div>
+                        <div class="field">
+                            <label class="label">Nome:</label>
+                            <div class="control">
+                                <input name="nome" class="input" type="text" placeholder="Seu Nome" />
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Loja *:</label>
+                            <div class="control">
+                                <div class="select is-fullwidth">
+                                    <select name="Selecione a Opção"> 
+                                    <option>MERCADO LIVRE</option>
+                                    <option>SHOPEE</option>
+                                </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Pedido *:</label>
+                            <div class="control">
+                                <input name="Pedido" class="input" type="text" placeholder="Seu Número de Pedido" />
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Telefone :</label>
+                            <div class="control">
+                                <input name="Telefone" class="input" type="text" placeholder="Seu Número de Telefone ( apenas números)" />
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Escolha sua arte * :</label>
+                            <div class="control">
+                                <div class="select is-fullwidth">
+                                    <select name="Selecione a Opção">
+                                        <option>Vou escolher uma opção no catálogo</option>
+                                        <option>Quero o modelo do anúncio</option>
+                                        <option>Não desejo personalizar meu pedido ( NÃO QUERO ADESIVOS )</option>
+                                        <option>Enviar folhas em branco ( SEM IMPRESSÃO )</option>
+                                        <option>Tenho a arte pronta vou enviar por aqui!</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <h2>Opções Catalogo</h2>
+                        <input type="file" name="image" /></br>
+                        <input type="submit" value="Enviar" name="envia" />
+                    </div>
+            </div>
+            <div>
+                <label for="msg">Mensagem:</label>
+                <textarea id="msg" name="usuario_msg"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Enviar sua mensagem</button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </section>
+</body>
