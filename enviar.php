@@ -47,7 +47,4 @@ $mail = new PHPMailer();
 	} else{
         echo 'Pedido não enviado: Informe o Número de Pedido e telefone '
     }
-} catch (Exception $e) {
-	echo "Erro ao enviar mensagem: {$mail->ErrorInfo}";
-}
 }

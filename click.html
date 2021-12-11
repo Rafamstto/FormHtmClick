@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8">
-
+    <link rel="stylesheet" href="click.css" />
     <link rel="stylesheet" href="css/bulma.min.css" />
 
 </head>
@@ -12,7 +12,7 @@
                 <div class="columms is-half">
                     <h1 class="title has-text-centered">Formulário Click</h1>
                 </div>
-                <form action="enviar.php" method="post">
+                <form action="/formulario" method="post">
                     <div>
                         <div class="field">
                             <label class="label">Nome:</label>
@@ -48,6 +48,7 @@
                             <div class="control">
                                 <div class="select is-fullwidth">
                                     <select name="SelecioneAopçãoArte">
+                                        <option selected>Selecione uma opção</option>
                                         <option>Vou escolher uma opção no catálogo</option>
                                         <option>Quero o modelo do anúncio</option>
                                         <option>Não desejo personalizar meu pedido ( NÃO QUERO ADESIVOS )</option>
@@ -57,24 +58,55 @@
                                 </div>
                             </div>
                         </div>
-                        <h2>Opções Catalogo</h2>
-                        <input type="file" name="imagem" /></br>
-                        <input type="submit" value="Enviar" name="Enviar" />
+                        <div class="field">
+                            <label class="label"> Envie sua arte pronta :</label>
+                            <div class="control">
+                                <div class="file2">
+                                    <label for='selecao-arquivo'>Selecionar um arquivo &#187;</label>
+                                    <input id='selecao-arquivo' type='file'>
+                                    <input name="file" type="file">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container2">
+                            <div class="file">
+                                <div>
+                                    <input name="file" type="image" value="1" src="img\1.PNG">
+                                    <input name="file" type="image" value="2" src="img\2.PNG">
+                                    <input name="file" type="image" value="3" src="img\3.PNG">
+                                    <input name="file" type="image" value="4" src="img\4.PNG">
+                                </div>
+                                <div>
+                                    <input name="file" type="image" value="5" src="img\5.PNG">
+                                    <input name="file" type="image" value="6" src="./img/6.PNG">
+                                    <input name="file" type="image" value="7" src="./img/7.PNG">
+                                    <input name="file" type="image" value="8" src="./img/8.PNG">
+                                </div>
+                                <div>
+                                    <input name="file" type="image" value="9" src="./img/9.PNG">
+                                    <input name="file" type="image" value="10" src="./img/10.PNG">
+                                    <input name="file" type="image" value="11" src="./img/11.PNG">
+                                    <input name="file" type="image" value="12" src="./img/12.PNG">
+                                </div>
+                            </div>
+                        </div>
                     </div>
             </div>
-            <div>
-                <label for="Frase">Frase:</label>
-                <div class="control">
-                    <textarea id="Frase" class="textarea" placeholder="Digite sua frase" maxlength="2000"></textarea>
-                </div>
+        </div>
+        <div>
+            <label for="Frase">Frase:</label>
+            <div class="control">
+                <textarea id="Frase" class="textarea" placeholder="Digite sua frase" maxlength="2000"></textarea>
             </div>
-            <div class="field is-grouped">
-                <div class="control">
-                    <button class="button is-link is-medium">Enviar</button>
-                </div>
+        </div>
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-link is-medium">Enviar</button>
             </div>
-            </form>
+        </div>
+        </form>
         </div>
         </div>
     </section>
 </body>
+</form>

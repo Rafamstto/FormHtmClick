@@ -7,7 +7,7 @@ h1 {
 
 form {
     margin: 0 auto;
-    width: 400px;
+    width: auto;
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
@@ -20,14 +20,14 @@ form div+div {
 
 label {
     display: inline-block;
-    width: 90px;
-    text-align: right;
+    width: auto;
+    text-align: left;
 }
 
 input,
 textarea {
     font: 1em sans-serif;
-    width: 300px;
+    width: auto;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #999;
@@ -39,21 +39,70 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-input:focus,
-textarea:focus {
-    border-color: #000;
-}
-
-textarea {
-    vertical-align: top;
-    height: 5em;
-    resize: vertical;
-}
-
 .button {
     padding-left: 90px;
 }
 
-button {
+.button {
     margin-left: .5em;
 }
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.file {
+    display: block;
+    margin: auto;
+    height: 50px 50px;
+    width: 100%;
+    margin: 5px;
+}
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+.file2 {
+    background-color: #3498db;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    padding: 6px 20px
+}
+
+.file {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.file:hover {}
