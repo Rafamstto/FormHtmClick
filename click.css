@@ -1,108 +1,144 @@
-h1 {
-    margin: 0 auto;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-form {
-    margin: 0 auto;
-    width: auto;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-    background-color: lightblue;
-}
-
-form div+div {
-    margin-top: 1em;
-}
-
-label {
-    display: inline-block;
-    width: auto;
-    text-align: left;
-}
-
-input,
-textarea {
-    font: 1em sans-serif;
-    width: auto;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 1px solid #999;
-}
-
-h2 {
-    font-size: 14px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.button {
-    padding-left: 90px;
-}
-
-.button {
-    margin-left: .5em;
-}
-
-.container2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.file {
-    display: block;
-    margin: auto;
-    height: 50px 50px;
-    width: 100%;
-    margin: 5px;
-}
-
-.slider {
-    display: block;
-    height: 293px;
-    width: 600px;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
-}
-
-.slider li {
-    list-style: none;
-    position: absolute;
-}
-
-.slider img {
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    vertical-align: top;
-}
-
-.slider input {
-    display: none;
-}
-
-input[type='file'] {
-    display: none;
-}
-
-.file2 {
-    background-color: #3498db;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    margin: 10px;
-    padding: 6px 20px
-}
-
-.file {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.file:hover {}
+    h1 {
+        margin: 0 auto;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    form {
+        margin: 0 auto;
+        width: auto;
+        padding: 1em;
+        border: 1px solid #ccc;
+        border-radius: 1em;
+        background-color: lightblue;
+    }
+    
+    form div+div {
+        margin-top: 1em;
+    }
+    
+    label {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: inline-block;
+        width: auto;
+        text-align: left;
+    }
+    
+    textarea {
+        margin: 0 auto;
+        font: 1em sans-serif;
+        width: auto;
+        justify-content: space-between;
+        box-sizing: border-box;
+        border: 1px solid #999;
+    }
+    
+    h2 {
+        font-size: 14px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .button {
+        padding-left: 90px;
+    }
+    
+    .button {
+        margin-left: .5em;
+    }
+    
+    .container2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .container2>input {
+        visibility: hidden;
+    }
+    
+    .container2 label>input+img {
+        cursor: pointer;
+        border: 4px solid #eee;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    
+    .container2 label>input:checked+img {
+        border: 4x solid #3f51b5;
+    }
+    
+    .file {
+        display: block;
+        margin: auto;
+        height: 50px 50px;
+        width: 100%;
+        margin: 5px;
+    }
+    
+    .slider {
+        display: block;
+        height: 293px;
+        width: 600px;
+        margin: auto;
+        margin-top: 20px;
+        position: relative;
+    }
+    
+    .slider li {
+        list-style: none;
+        position: absolute;
+    }
+    
+    .slider img {
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        vertical-align: top;
+    }
+    
+    .slider input {
+        display: none;
+    }
+    
+    input[type='file'] {
+        display: none;
+    }
+    
+    .file2 {
+        background-color: #3498db;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        margin: 10px;
+        padding: 6px 20px
+    }
+    
+    .file {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .container3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .container3>input {
+        visibility: hidden;
+    }
+    
+    .container3 label>input+img {
+        cursor: pointer;
+        border: 4px solid #eee;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    
+    .container3 label>input:checked+img {
+        border: 4x solid #3f51b5;
+    }
